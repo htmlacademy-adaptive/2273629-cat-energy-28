@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Кэт энерджи</title>
+    <base href="https://htmlacademy-adaptive.github.io/2273629-cat-energy-28/2/">
+</head>
+  <body class="page__body">
+    <header class="main-header">
+      <a class="main-header__logo">
+        <img src="./img/logo-mobile.png" alt="Магазин 'Кэт  Энерджи'">
+        <img src="./img/logo2.png" alt="Магазин 'Кэт  Энерджи'">
+      </a>
+      <nav class="main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+        <div class="main-nav_container">
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a href="index.html">Главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Каталог продукции</a></li>
+            <li class="site-list__item">
+              <a href="form.html">Подбор продукции</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main class="form-main">
+      <section class="choise-programm">
+        <div class="choise-programm__wrapper">
+          <h2 class="choise-programm__title">Подбор программы</h2>
+          <p class="choise-programm__text">
+            Заполните анкету, и мы подберем
+            программу питания для вашего кота
+          </p>
+          <form class="choise-programm__form" action="https://echo.htmlacademy.ru/">
+            <fieldset class="coise-programm__form__inputs-field">
+              <label>
+                Имя:*
+                <input class="choise-programm__input" type="text" placeholder="Барсик">
+              </label>
+              <label>
+                Вес (кг):*
+                <input class="choise-programm__input" type="number" placeholder="7">
+              </label>
+              <label>
+                Возраст (лет):
+                <input class="choise-programm__input" type="number" placeholder="7">
+              </label>
+            </fieldset>
+            <fieldset class="choise-programm__form__inputs-field radio--inputs">
+              <label>
+                Похудение
+                <input class="choise-programm__radio-input" type="radio" name="Slim" value="Slim" checked>
+              </label>
+              <label>
+                Набор массы
+                <input class="choise-programm__radio-input" type="radio" name="Growing" value="Grow">
+              </label>
+              <label>
+                Не знаю (Нужен ваш совет)
+                <input class="choise-programm__radio-input" type="radio" name="Advice" value="Unknow">
+              </label>
+            </fieldset>
+
+            <fieldset class="coise-programm__form__contacts-field">
+              <legend class="choise-programm__form__title">Контактные данные (владельца кота)</legend>
+              <label>
+                E-MAIL:*
+                <input class="choise-programm__input" type="email" placeholder="kuklachev@gmail.com">
+              </label>
+              <label>
+                Телефон:*
+                <input class="choise-programm__input" type="tel" placeholder="8 (960) 900-60-90">
+              </label>
+            </fieldset>
+
+            <fieldset class="coise-programm__form__comment-field">
+              <legend class="choise-programm__form__title">Комментарий</legend>
+              <label>
+                <textarea class="choise-programm__textarea" name="about-cat" cols="40" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </label>
+            </fieldset>
+
+            <fieldset class="choise-programm__form__inputs-field checkbox--inputs">
+              <legend class="choise-programm__form__title">Дополнительно</legend>
+              <label>
+                Сахорозаменитель
+                <input class="choise-programm__chexbox-input" type="checkbox" checked>
+              </label>
+              <label>
+                Питьевая вода
+                <input class="choise-programm__chexbox-input" type="checkbox" value="Grow">
+              </label>
+              <label>
+                Молоко
+                <input class="choise-programm__chexbox-input" type="checkbox" value="Unknow">
+              </label>
+              <label>
+                Витамины
+                <input class="choise-programm__chexbox-input" type="checkbox" value="Unknow">
+              </label>
+            </fieldset>
+
+            <button class="button button--choise-programm" type="submit">Отправить заявку</button>
+            <p class="choise-programm__form__warning">
+              * — Обязательные поля
+            </p>
+          </form>
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="contacts__wrapper">
+          <p class="contacts__text">Приглашаем к сотрудничеству дилеров!</p>
+          <p class="contacts__address">
+            ул. Большая
+            Конюшенная, д. 19/8
+            Санкт-Петербург
+          </p>
+        </div>
+      </section>
+
+      <section class="location">
+        <div class="location__wrapper">
+          <img src="./img/location.jpg" alt="Местоположение магазина на карте">
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="main-footer__wrapper">
+        <ul class="main-footer__list">
+          <li class="footer__list__item">
+            <a class="button footer--logo-button" href="#">
+              <img src="./img/logo2.png" alt="Магазин 'Кэт Энерджи'">
+            </a>
+          </li>
+          <li class="footer__list__item">
+            <ul class="footer__social-list">
+              <li class="social-list__item">
+                <a class="button social-list--button" href="#">
+                  <img src="./img/social-networks/vkontakte.png" alt="Вконтакте">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="button social-list--button" href="#">
+                  <img src="./img/social-networks/youtube.png" alt="Ютуб">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="button social-list--button" href="#">
+                  <img src="./img/social-networks/telegram.png" alt="Телеграмм">
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="footer__list__item">
+            <p class="footer__list__item__text">HTML Academy</p>
+            <svg aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="27" height="34" viewBox="0 0 60 60">
+              <path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+            </svg>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
+
+
+</html>
