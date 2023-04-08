@@ -1,0 +1,51 @@
+.choise-programm--fonts {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+}
+
+.choise-programm__title {
+  font-size: 36px;
+  line-height: 36px;
+}
+
+.choise-programm__text {
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.choise-programm__label,
+.choise-programm__input--placeholder::placeholder {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
+}
+
+.choise-programm__label--radio-label {
+   color: #222222;
+}
+
+.choise-programm__form__title {
+  font-size: 24px;
+  line-height: 26px;
+  color: #000000;
+}
+
+.choise-programm__label--chexbox-label {
+  color: #000000;
+}
+
+.button--choise-programm {
+  color: #ffffff;
+  background-color: #68B738;
+}
+
+.choise-programm__form__warning {
+  font-family: 'Lato';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px
+}
