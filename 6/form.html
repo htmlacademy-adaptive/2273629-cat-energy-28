@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+     <title>HTML Academy: Кэт энерджи</title>
+    <base href="https://htmlacademy-adaptive.github.io/2273629-cat-energy-28/6/">
+</head>
+  <body class="page__body">
+    <div class="page__body__wrapper">
+      <header class="main-header">
+        <div class="main-header__wrapper">
+          <a class="main-header__logo main-header__logo--first" href="#"></a>
+          <a class="main-header__logo main-header__logo--second" href="#"></a>
+          <button class="button button--menu" type="button">
+            <span class="visually-hidden">Меню</span>
+          </button>
+          <ul class="list main-header__menu">
+            <li class="main-header__menu__item main-header__menu__item--form-desktop">
+              <a class="link main-header__menu__item__link" href="./index.html">
+                Главная
+              </a>
+            </li>
+            <li class="main-header__menu__item main-header__menu__item--form-desktop ">
+              <a class="link main-header__menu__item__link" href="./catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="main-header__menu__item main-header__menu__item--form-desktop main-header__menu__item--current-form">
+              <a class="link main-header__menu__item__link" href="./form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </div>
+      </header>
+
+      <main class="form-main">
+        <section class="choise-programm">
+          <div class="wrapper choise-programm__wrapper">
+            <div class="choise-programm__header">
+              <h2 class="title choise-programm__title">
+                Подбор программы
+              </h2>
+              <p class="choise-programm__subtext">
+                Заполните анкету, и мы подберём программу питания
+                для вашего кота
+              </p>
+            </div>
+            <form class="choise-programm__form" action="https://echo.htmlacademy.ru/">
+              <div class="choise-programm__ancets__container">
+                <div class="choise-programm__ancets">
+                  <label class="label choise-programm__label">
+                    <span class="choise-programm__label__text">ИМЯ:*</span>
+                    <input class="input input--text choise-programm__input" type="text"  name="name" placeholder="Барсик">
+                  </label>
+
+                  <label class="label choise-programm__label">
+                    <span class="choise-programm__label__text">Вес (кг):*</span>
+                    <input class="input input--number choise-programm__input" type="number" name="height" placeholder="7">
+                  </label>
+
+                  <label class="label choise-programm__label">
+                    <span class="choise-programm__label__text">Возраст (лет):</span>
+                    <input class="input input--number choise-programm__input" type="number" name="age" placeholder="7">
+                  </label>
+                </div>
+
+                <div class="choise-programm__ancets">
+                  <fieldset class="choise-programm__ancets__radio-inputs">
+                    <label class="label choise-programm__label choise-programm__label--radio">
+                      <input class="input input--radio choise-programm__input choise-programm__input--radio" type="radio" value="Похудение" checked>
+                      <span class="choise-programm__label__text choise-programm__label__text--radio">Похудение</span>
+                    </label>
+
+                    <label class="label choise-programm__label choise-programm__label--radio">
+                      <input class="input input--radio choise-programm__input choise-programm__input--radio" type="radio" value="Набор массы">
+                      <span class="choise-programm__label__text">Набор массы</span>
+                    </label>
+
+                    <label class="label choise-programm__label choise-programm__label--radio">
+                      <input class="input input--radio choise-programm__input choise-programm__input--radio" type="radio" value="Нужен совет">
+                      <span class="choise-programm__label__text">Не знаю (нужен ваш совет)</span>
+                    </label>
+                  </fieldset>
+                </div>
+              </div>
+
+
+              <div class="choise-programm__contact-details">
+                <h3 class="subtitle contact-details__subtitle">
+                  Контактные данные (владельца кота)
+                </h3>
+                <div class="contact-details__inputs">
+                  <label class="label choise-programm__label choise-programm__label--desktop">
+                    <span class="choise-programm__label__text">E-MAIL:*</span>
+                    <input class="input input--email choise-programm__input" type="email" placeholder="kuklachev@gmail.com">
+                  </label>
+
+                  <label class="label choise-programm__label choise-programm__label--desktop">
+                    <span class="choise-programm__label__text">ТЕЛЕФОН:*</span>
+                    <input class="input input--tel choise-programm__input" type="tel" placeholder="8 (960) 900-60-90">
+                  </label>
+               </div>
+              </div>
+
+              <div class="choise-programm__comments">
+                <h3 class="subtitle contact-details__subtitle">
+                  Комментарий
+                </h3>
+                <textarea class="textarea choise-programm__textarea" name="comments" cols="30" rows="10" placeholder="Расскажите обо всех повадках кота"></textarea>
+              </div>
+
+              <div class="choise-programm__additional">
+                <h3 class="subtitle contact-details__subtitle">
+                  Дополнительно
+                </h3>
+
+                <div class="additional__inputs">
+                  <label class="label choise-programm__label choise-programm__label--chexbox">
+                    <input class="input input--chexbox choise-programm__input choise-programm__input--chexbox" name="sugar zero" type="checkbox" checked>
+                    <span class="choise-programm__label__text">Сахарозаменитель</span>
+                  </label>
+                  <label class="label choise-programm__label choise-programm__label--chexbox">
+                    <input class="input input--chexbox choise-programm__input choise-programm__input--chexbox" name="water" type="checkbox">
+                    <span class="choise-programm__label__text">Питьевая вода</span>
+                  </label>
+                  <label class="label choise-programm__label choise-programm__label--chexbox">
+                    <input class="input input--chexbox choise-programm__input choise-programm__input--chexbox" name="milk" type="checkbox">
+                    <span class="choise-programm__label__text">Молоко</span>
+                  </label>
+                  <label class="label choise-programm__label choise-programm__label--chexbox">
+                    <input class="input input--chexbox choise-programm__input choise-programm__input--chexbox" name="vitamins" type="checkbox">
+                    <span class="choise-programm__label__text">Витамины</span>
+                  </label>
+                  <button class="button button--primary button--submit" type="submit">
+                    Отправить заявку
+                  </button>
+                  <p class="form-warning">
+                    * — Обязательные поля
+                  </p>
+                </div>
+
+              </div>
+
+
+            </form>
+          </div>
+        </section>
+
+        <section class="contacts">
+          <div class="wrapper contacts__wrapper">
+            <div class="contacts__agitation">
+              <p class="contacts__text">
+                Приглашаем к сотрудничеству дилеров!
+              </p>
+              <p class="contacts__address">
+                ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+              </p>
+            </div>
+            <div class="contacts__location"></div>
+          </div>
+        </section>
+
+      </main>
+
+      <footer class="main-footer">
+        <div class="wrapper main-footer__wrapper">
+          <ul class="list main-footer__list">
+            <li class="main-footer__list__item main-footer__list__item--logo">
+              <div class="main-footer__logo"></div>
+            </li>
+            <li class="main-footer__list__item">
+              <ul class="list social-list">
+                <li class="social-list__item">
+                  <a class="link social-list__link">
+                    <img src="./img/social-networks/vkontakte.png" width="28" height="22" alt="">
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="link social-list__link">
+                    <img src="./img/social-networks/youtube.png" width="28" height="22" alt="">
+                  </a>
+                </li>
+                <li class="social-list__item">
+                  <a class="link social-list__link">
+                    <img src="./img/social-networks/telegram.png" width="28" height="22" alt="">
+                  </a>
+                </li>
+              </ul>
+            </li>
+            <li class="main-footer__list__item main-footer__list__item--html-academy">
+              <div class="html-academy-links">
+                <a class="link html-academy-link" href="">HTML Academy</a>
+                <a class="link html-academy-logo" href="">
+                  <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="37" height="44" viewBox="0 0 60 60">
+                    <path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </footer>
+    </div>
+  </body>
+
+
+</html>
