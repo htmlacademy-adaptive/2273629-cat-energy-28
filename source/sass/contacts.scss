@@ -1,16 +1,111 @@
-.contacts__title {
-  font-family: 'Oswald', sans-serif;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 20px;
-  text-transform: uppercase;
-  color: #111111;
+@media (min-width: $mobile_width) {
+  .contacts__wrapper {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+  }
+
+  .contacts__agitation {
+    display: flex;
+    width: 100%;
+    padding: 26px 20px;
+    justify-content: space-between;
+    box-sizing: border-box;
+  }
+
+  .contacts__agitation--catalog {
+    background-color: $basic_grey;
+  }
+
+  .contacts__text {
+    width: 139px;
+    margin: 0;
+
+    font-family: $oswald_reg;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #111111;
+    text-transform: uppercase;
+  }
+
+  .contacts__address {
+    width: 139px;
+    margin: 0;
+
+    font-family: $lato_reg;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: $special_dark-grey;
+  }
+
+  .contacts__location {
+    width: 320px;
+    height: 362px;
+    background-image: url("../img/mobile-location.jpg");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .contacts__location__image {
+    width: 100%;
+    height: 100%;
+  }
 }
 
-.contacts__address {
-  font-family: 'Lato', sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  color: #444444;
+@media (min-width: $tablet_width) {
+  .contacts__agitation {
+    padding: 60px 70px;
+    background-color: #ffffff;
+  }
+
+  .contacts__agitation--catalog-table {
+    background-color: $basic_grey;
+  }
+
+  .contacts__agitation--form-table {
+    background-color: $basic_grey;
+  }
+
+  .contacts__text {
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .contacts__address {
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .contacts__location {
+    width: 100%;
+    height: 400px;
+    background-image: url("../img/tablet-location.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+}
+
+
+@media (min-width: $desktop_width) {
+  .contacts__wrapper {
+    position: relative;
+  }
+
+  .contacts__agitation {
+    position: absolute;
+    width: 565px;
+    top: 95px;
+    left: 110px;
+    background-color: #ffffff;
+  }
+
+  .contacts__location {
+    background-image: url("../img/desktop-location.png");
+  }
+
 }
