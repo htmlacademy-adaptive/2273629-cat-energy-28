@@ -1,7 +1,10 @@
 @media (min-width: $mobile_width) {
+  .main-footer {
+    background-color: $basic_grey;
+  }
+
   .main-footer__wrapper {
     padding: 20px 20px;
-    background-color: $basic_grey;
   }
 
   .main-footer__list {
@@ -55,7 +58,7 @@
 
 @media (min-width: $tablet_width) {
   .main-footer__wrapper {
-    padding: 55px 30px;
+    padding: 55px 0;
   }
 
   .main-footer__list {
@@ -78,7 +81,8 @@
 
 @media (min-width: $desktop_width) {
   .main-footer__wrapper {
-    padding: 60px 110px;
+    width: 100%;
+    padding: 60px 0;
   }
 
   .main-footer__list__item {

@@ -6,10 +6,9 @@
   <link rel="stylesheet" href="./css/style.css">
   <title>Каталог</title>
 </head>
-<body class="page__body">
-  <div class="page__body__wrapper">
+<body class="page__body page__body--catalog">
     <header class="main-header">
-      <div class="main-header__wrapper">
+      <div class="wrapper main-header__wrapper">
         <a class="main-header__logo main-header__logo--first" href="#"></a>
         <a class="main-header__logo main-header__logo--second" href="#"></a>
         <button class="button button--menu" type="button">
@@ -37,13 +36,14 @@
 
     <main class="catalog-main">
       <section class="catalog">
+
         <div class="wrapper catalog__wrapper">
+          <div class="catalog__header">
+            <h2 class="title title--catalog">
+              Каталог продукции
+            </h2>
+          </div>
           <ul class="list catalog__list">
-            <li class="catalog__list__item catalog__header">
-              <h2 class="title title--catalog">
-                Каталог продукции
-              </h2>
-            </li>
             <li class="catalog__list__item product__card">
               <div class="product__container">
                 <div class="product__image__container">
@@ -362,14 +362,14 @@
       </section>
 
       <section class="additional">
-        <div class="additional__product__header">
+        <div class="wrapper additional__wrapper">
+          <div class="additional__header">
           <h2 class="title additional__title">
             Дополнительные товары
           </h2>
         </div>
-        <div class="wrapper additional__wrapper">
-
-          <ul class="list additional__product__list">
+          <div class="additional__container">
+            <ul class="list additional__product__list">
             <li class="additional__product__list__item additional__product__card">
               <h3 class="title additional__product__title">
                 Сахарозаменитель
@@ -449,6 +449,8 @@
               Закажите все и получите чехол для кота в подарок!
             </p>
           </div>
+          </div>
+
         </div>
       </section>
 
@@ -462,7 +464,9 @@
               ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
             </p>
           </div>
-          <div class="contacts__location"></div>
+        </div>
+        <div class="contacts__location">
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=40.569626%2C64.537849&z=14"  allowfullscreen="true"></iframe>
         </div>
       </section>
     </main>
@@ -505,7 +509,5 @@
         </ul>
       </div>
     </footer>
-  </div>
-</body>
 </body>
 </html>
