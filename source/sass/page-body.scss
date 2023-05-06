@@ -1,0 +1,74 @@
+.page__body::before {
+  @media (min-width: $mobile_width) {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 302px;
+    top: 65px;
+    right: 0;
+    background-image: url("../img/mobile-promo-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  @media (min-width: $tablet_width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop_width) {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 50%;
+    height: 694px;
+    top: 0;
+    right: 0;
+    background-image: url("../img/desktop-promo-background.jpg");
+    background-repeat: no-repeat;
+    background-position: right;
+  }
+}
+
+.page__body::after {
+  @media (min-width: $mobile_width) {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 302px;
+    top: 65px;
+    right: 0;
+    background-color: #65A73C;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  @media (min-width: $tablet_width) {
+    display: none;
+  }
+
+  @media (min-width: $desktop_width) {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 50%;
+    height: 694px;
+    top: 0;
+    right: 0;
+    background-color: #65A73C;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+}
+
+
+.page__body--catalog::before,
+.page__body--form::before {
+  display: none
+}
+
+.page__body--catalog::after,
+.page__body--form::after {
+  display: none;
+}

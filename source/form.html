@@ -6,10 +6,9 @@
     <link rel="stylesheet" href="./css/style.css">
      <title>HTML Academy: Кэт энерджи</title>
   </head>
-  <body class="page__body">
-    <div class="page__body__wrapper">
+  <body class="page__body page__body--form">
       <header class="main-header">
-        <div class="main-header__wrapper">
+        <div class="wrapper main-header__wrapper">
           <a class="main-header__logo main-header__logo--first" href="#"></a>
           <a class="main-header__logo main-header__logo--second" href="#"></a>
           <button class="button button--menu" type="button">
@@ -66,24 +65,24 @@
                   </label>
                 </div>
 
-                <div class="choise-programm__ancets">
                   <fieldset class="choise-programm__ancets__radio-inputs">
                     <label class="label choise-programm__label choise-programm__label--radio">
                       <input class="input input--radio choise-programm__input choise-programm__input--radio" type="radio" value="Похудение" checked>
+                      <span class="radio-span"></span>
                       <span class="choise-programm__label__text choise-programm__label__text--radio">Похудение</span>
                     </label>
 
                     <label class="label choise-programm__label choise-programm__label--radio">
                       <input class="input input--radio choise-programm__input choise-programm__input--radio" type="radio" value="Набор массы">
-                      <span class="choise-programm__label__text">Набор массы</span>
+                      <span class="radio-span"></span>
+                      <span class="choise-programm__label__text choise-programm__label__text--radio">Набор массы</span>
                     </label>
-
                     <label class="label choise-programm__label choise-programm__label--radio">
                       <input class="input input--radio choise-programm__input choise-programm__input--radio" type="radio" value="Нужен совет">
-                      <span class="choise-programm__label__text">Не знаю (нужен ваш совет)</span>
+                      <span class="radio-span"></span>
+                      <span class="choise-programm__label__text choise-programm__label__text--radio">Не знаю (нужен ваш совет)</span>
                     </label>
                   </fieldset>
-                </div>
               </div>
 
 
@@ -118,20 +117,24 @@
 
                 <div class="additional__inputs">
                   <label class="label choise-programm__label choise-programm__label--chexbox">
-                    <input class="input input--chexbox choise-programm__input choise-programm__input--chexbox" name="sugar zero" type="checkbox" checked>
-                    <span class="choise-programm__label__text">Сахарозаменитель</span>
+                    <input class="input input--checkbox choise-programm__input choise-programm__input--checkbox" name="sugar zero" type="checkbox" checked>
+                    <span class="checkbox-span"></span>
+                    <span class="choise-programm__label__text choise-programm__label__text--checkbox-text">Сахарозаменитель</span>
                   </label>
                   <label class="label choise-programm__label choise-programm__label--chexbox">
-                    <input class="input input--chexbox choise-programm__input choise-programm__input--chexbox" name="water" type="checkbox">
-                    <span class="choise-programm__label__text">Питьевая вода</span>
+                    <input class="input input--checkbox choise-programm__input choise-programm__input--checkbox" name="water" type="checkbox">
+                    <span class="checkbox-span"></span>
+                    <span class="choise-programm__label__text choise-programm__label__text--checkbox-text">Питьевая вода</span>
                   </label>
                   <label class="label choise-programm__label choise-programm__label--chexbox">
-                    <input class="input input--chexbox choise-programm__input choise-programm__input--chexbox" name="milk" type="checkbox">
-                    <span class="choise-programm__label__text">Молоко</span>
+                    <input class="input input--checkbox choise-programm__input choise-programm__input--checkbox" name="milk" type="checkbox">
+                    <span class="checkbox-span"></span>
+                    <span class="choise-programm__label__text choise-programm__label__text--checkbox-text">Молоко</span>
                   </label>
                   <label class="label choise-programm__label choise-programm__label--chexbox">
-                    <input class="input input--chexbox choise-programm__input choise-programm__input--chexbox" name="vitamins" type="checkbox">
-                    <span class="choise-programm__label__text">Витамины</span>
+                    <input class="input input--checkbox choise-programm__input choise-programm__input--checkbox" name="vitamins" type="checkbox">
+                    <span class="checkbox-span"></span>
+                    <span class="choise-programm__label__text choise-programm__label__text--checkbox-text">Витамины</span>
                   </label>
                   <button class="button button--primary button--submit" type="submit">
                     Отправить заявку
@@ -158,7 +161,9 @@
                 ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
               </p>
             </div>
-            <div class="contacts__location"></div>
+          </div>
+          <div class="contacts__location">
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=40.569626%2C64.537849&z=14"  allowfullscreen="true"></iframe>
           </div>
         </section>
 
@@ -202,7 +207,6 @@
           </ul>
         </div>
       </footer>
-    </div>
   </body>
 
 

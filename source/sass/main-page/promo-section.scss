@@ -2,7 +2,6 @@
   .promo__wrapper {
     position: relative;
     display: flex;
-    margin-bottom: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -14,23 +13,13 @@
 
   .button--promo {
     position: absolute;
-    top: 450px;
+    top: 430px;
     left: 0;
-  }
-
-  .promo__background {
-    position: absolute;
-    width: 100%;
-    height: 302px;
-    top: 0;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/promo-background.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    z-index: -1;
   }
 
 
   .title--promo {
+    width: 250px;
     margin: 27px 0 25px;
 
     font-family: $oswald_reg;
@@ -58,21 +47,27 @@
     text-transform: uppercase;
   }
 
-  .promo__image {
+  .promo__image__container {
+    display: flex;
     width: 280px;
     height: 280px;
-    background-image: url("/img/mobile-promo-image.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .promo__image {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;
   }
 }
 
 @media (min-width: $tablet_width) {
   .promo__wrapper {
+    position: relative;
     margin: 0;
     align-items: normal;
     flex-direction: column;
-
   }
 
   .promo__title__container {
@@ -100,12 +95,16 @@
     display: none;
   }
 
-  .promo__image {
+  .promo__image__container {
+    position: relative;
+    display: flex;
     width: 709px;
-    height: 609px;
-    background-image: url("/img/tablet-promo-image.png");
-    background-repeat: no-repeat;
-    background-size: contain;
+    height: 500px;
+    margin-top: -81px;
+    left: 10px;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
   }
 
   .button--promo {
@@ -130,11 +129,12 @@
     position: relative;
     flex-direction: row;
     justify-content: flex-start;
-    margin-bottom: 267px;
+    margin: 0 auto;
+    margin-bottom: 234px;
   }
 
-  .title--promo {
-
+  .promo__title__container {
+    margin: 62px 0 20px 80px;
   }
 
   .promo__slogan {
@@ -153,20 +153,21 @@
     height: 694px;
     top: -46%;
     right: 0;
-    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("/img/index-background-desktop.png");
+    background-image: linear-gradient(rgba(104, 183, 56, 0.85), rgba(104, 183, 56, 0.85)), url("../img/index-background-desktop.png");
     background-repeat: no-repeat;
     background-position: center;
     z-index: -1;
   }
 
-  .promo__image {
-    position: absolute;
+  .promo__image__container {
+    position: relative;
+    display: flex;
     width: 552px;
     height: 500px;
-    top: 0;
-    right: 23%;
-    background-image: url("/img/desktop-promo-image.png");
+    top: 82px;
+    left: -58px;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
   }
-
 }
-

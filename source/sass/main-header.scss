@@ -1,9 +1,9 @@
 @media (min-width: $mobile_width) {
-
   .main-header__wrapper {
     position: relative;
     display: flex;
-    padding: 10px 20px 18px;
+    padding-top: 10px;
+    padding-bottom: 20px;
     justify-content: space-between;
     align-items: center;
   }
@@ -58,10 +58,6 @@
 }
 
 @media (min-width: $tablet_width) {
-  .main-header__wrapper {
-    padding: 0 30px;
-  }
-
   .main-header__logo--first {
     display: block;
     width: 174px;
@@ -108,20 +104,32 @@
     border-bottom: 2px solid $basic_green;
   }
 
+  .main-header__menu__item--current-form {
+    border-bottom: 2px solid $basic_green;
+  }
+
 }
 
 
 @media (min-width: $desktop_width) {
   .main-header__wrapper {
-    padding: 53px 110px;
+    margin: 0 auto;
+    padding-top: 53px;
+    justify-content: unset;
   }
 
   .main-header__logo--first {
     display: block;
     width: 202px;
     height: 59px;
+    margin-right: 540px;
     background-image: url("../img/logo-desktop.png");
     background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .main-header__menu {
+    width: 478px;
   }
 
   .main-header__menu__item {
@@ -163,5 +171,3 @@
     border-bottom: 2px solid $basic_green;
   }
 }
-
-
