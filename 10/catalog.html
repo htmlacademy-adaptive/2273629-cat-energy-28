@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="./favicon.ico">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>Каталог</title>
+  <base href="https://htmlacademy-adaptive.github.io/2273629-cat-energy-28/10/">
+</head>
+<body class="page__body page__body--catalog">
+    <header class="main-header">
+      <div class="wrapper main-header__wrapper">
+        <a class="main-header__logo main-header__logo--first" href="#"></a>
+        <a class="main-header__logo main-header__logo--second" href="#"></a>
+        <button class="button button--menu" type="button">
+          <span class="visually-hidden">Меню</span>
+        </button>
+        <ul class="list main-header__menu">
+          <li class="main-header__menu__item main-header__menu__item--catalog-desktop">
+            <a class="link main-header__menu__item__link" href="./index.html">
+              Главная
+            </a>
+          </li>
+          <li class="main-header__menu__item main-header__menu__item--catalog-desktop main-header__menu__item--current-catalog">
+            <a class="link main-header__menu__item__link" href="./catalog.html">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="main-header__menu__item main-header__menu__item--catalog-desktop">
+            <a class="link main-header__menu__item__link" href="./form.html">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
+    <main class="catalog-main">
+      <section class="catalog">
+
+        <div class="wrapper catalog__wrapper">
+          <div class="catalog__header">
+            <h2 class="title title--catalog">
+              Каталог продукции
+            </h2>
+          </div>
+          <ul class="list catalog__list">
+            <li class="catalog__list__item product__card">
+              <div class="product__container">
+                <div class="product__image__container">
+                  <picture>
+                    <source media="(min-width: 1440px)"
+                        srcset="./img/catalog/product-1-desktop.png 1x,
+                                ./img/catalog/retina/product-1-desktop-x2.png 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="./img/catalog/product-1-tablet.png 1x,
+                                ./img/catalog/retina/product-1-tablet-x2.png 2x">
+                    <img class="product__image" src="./img/catalog/product-1-mobile.png" alt="Товар"
+                        srcset="./img/catalog/product-1-mobile.png 1x,
+                                ./img/catalog/retina/product-1-mobile-x2.png 2x">
+                  </picture>
+                </div>
+                <div class="product__info">
+                  <h3 class="product__info__title">
+                    Cat Energy PRO 500 г
+                  </h3>
+                  <table class="product__info__table">
+                    <tbody>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Масса
+                        </th>
+                        <td class="product__info__table__row__data">
+                          500 г
+                        </td>
+                      </tr>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Вкус
+                        </th>
+                        <td class="product__info__table__row__data">
+                          Курица
+                        </td>
+                      </tr>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Цена
+                        </th>
+                        <td class="product__info__table__row__data">
+                          700 ₽
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <button class="button button--primary button--buy-product">
+                Заказать
+              </button>
+            </li>
+            <li class="catalog__list__item product__card">
+              <div class="product__container">
+                <div class="product__image__container">
+                  <picture>
+                    <source media="(min-width: 1440px)"
+                        srcset="./img/catalog/product-2-desktop.png 1x,
+                                ./img/catalog/retina/product-2-desktop-x2.png 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="./img/catalog/product-2-tablet.png 1x,
+                                ./img/catalog/retina/product-2-tablet-x2.png 2x">
+                    <img class="product__image" src="./img/catalog/product-2-mobile.png" alt="Товар"
+                        srcset="./img/catalog/product-2-mobile.png 1x,
+                                ./img/catalog/retina/product-2-mobile-x2.png 2x">
+                  </picture>
+                </div>
+                <div class="product__info">
+                  <h3 class="product__info__title">
+                    Cat Energy PRO 1000 г
+                  </h3>
+                  <table class="product__info__table">
+                    <tbody>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Масса
+                        </th>
+                        <td class="product__info__table__row__data">
+                          1000 г
+                        </td>
+                      </tr>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Вкус
+                        </th>
+                        <td class="product__info__table__row__data">
+                          Курица
+                        </td>
+                      </tr>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Цена
+                        </th>
+                        <td class="product__info__table__row__data">
+                          1000 ₽
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <button class="button button--primary button--buy-product">
+                Заказать
+              </button>
+            </li>
+            <li class="catalog__list__item product__card">
+              <div class="product__container">
+                <div class="product__image__container">
+                  <picture>
+                    <source media="(min-width: 1440px)"
+                        srcset="./img/catalog/product-3-desktop.png 1x,
+                                ./img/catalog/retina/product-3-desktop-x2.png 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="./img/catalog/product-3-tablet.png 1x,
+                                ./img/catalog/retina/product-3-tablet-x2.png 2x">
+                    <img class="product__image" src="./img/catalog/product-3-mobile.png" alt="Товар"
+                        srcset="./img/catalog/product-3-mobile.png 1x,
+                                ./img/catalog/retina/product-3-mobile-x2.png 2x">
+                  </picture>
+                </div>
+                <div class="product__info">
+                  <h3 class="product__info__title">
+                    Cat Energy PRO 500 г
+                  </h3>
+                  <table class="product__info__table">
+                    <tbody>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Масса
+                        </th>
+                        <td class="product__info__table__row__data">
+                          500 г
+                        </td>
+                      </tr>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Вкус
+                        </th>
+                        <td class="product__info__table__row__data">
+                          Рыба
+                        </td>
+                      </tr>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Цена
+                        </th>
+                        <td class="product__info__table__row__data">
+                          700 ₽
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <button class="button button--primary button--buy-product">
+                Заказать
+              </button>
+            </li>
+            <li class="catalog__list__item product__card">
+              <div class="product__container">
+                <div class="product__image__container">
+                  <picture>
+                    <source media="(min-width: 1440px)"
+                        srcset="./img/catalog/product-4-desktop.png 1x,
+                                ./img/catalog/retina/product-4-desktop-x2.png 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="./img/catalog/product-4-tablet.png 1x,
+                                ./img/catalog/retina/product-4-tablet-x2.png 2x">
+                    <img class="product__image" src="./img/catalog/product-4-mobile.png" alt="Товар"
+                        srcset="./img/catalog/product-4-mobile.png 1x,
+                                ./img/catalog/retina/product-4-mobile-x2.png 2x">
+                  </picture>
+                </div>
+                <div class="product__info">
+                  <h3 class="product__info__title">
+                    Cat Energy PRO 1000 г
+                  </h3>
+                  <table class="product__info__table">
+                    <tbody>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Масса
+                        </th>
+                        <td class="product__info__table__row__data">
+                          1000 г
+                        </td>
+                      </tr>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Вкус
+                        </th>
+                        <td class="product__info__table__row__data">
+                          Рыба
+                        </td>
+                      </tr>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Цена
+                        </th>
+                        <td class="product__info__table__row__data">
+                          1000 ₽
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <button class="button button--primary button--buy-product">
+                Заказать
+              </button>
+            </li>
+            <li class="catalog__list__item product__card">
+              <div class="product__container">
+                <div class="product__image__container">
+                  <picture>
+                    <source media="(min-width: 1440px)"
+                        srcset="./img/catalog/product-5-desktop.png 1x,
+                                ./img/catalog/retina/product-5-desktop-x2.png 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="./img/catalog/product-5-tablet.png 1x,
+                                ./img/catalog/retina/product-5-tablet-x2.png 2x">
+                    <img class="product__image" src="./img/catalog/product-5-mobile.png" alt="Товар"
+                        srcset="./img/catalog/product-5-mobile.png 1x,
+                                ./img/catalog/retina/product-5-mobile-x2.png 2x">
+                  </picture>
+                </div>
+                <div class="product__info">
+                  <h3 class="product__info__title">
+                    Cat Energy Slim 500 г
+                  </h3>
+                  <table class="product__info__table">
+                    <tbody>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Масса
+                        </th>
+                        <td class="product__info__table__row__data">
+                          500 г
+                        </td>
+                      </tr>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Вкус
+                        </th>
+                        <td class="product__info__table__row__data">
+                          Гречка
+                        </td>
+                      </tr>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Цена
+                        </th>
+                        <td class="product__info__table__row__data">
+                          400 ₽
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <button class="button button--primary button--buy-product">
+                Заказать
+              </button>
+            </li>
+            <li class="catalog__list__item product__card">
+              <div class="product__container">
+                <div class="product__image__container">
+                  <picture>
+                    <source media="(min-width: 1440px)"
+                        srcset="./img/catalog/product-6-desktop.png 1x,
+                                ./img/catalog/retina/product-6-desktop-x2.png 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="./img/catalog/product-6-tablet.png 1x,
+                                ./img/catalog/retina/product-6-tablet-x2.png 2x">
+                    <img class="product__image" src="./img/catalog/product-6-mobile.png" alt="Товар"
+                        srcset="./img/catalog/product-6-mobile.png 1x,
+                                ./img/catalog/retina/product-6-mobile-x2.png 2x">
+                  </picture>
+                </div>
+                <div class="product__info">
+                  <h3 class="product__info__title">
+                    Cat Energy Slim 1000 г
+                  </h3>
+                  <table class="product__info__table">
+                    <tbody>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Масса
+                        </th>
+                        <td class="product__info__table__row__data">
+                          1000 г
+                        </td>
+                      </tr>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Вкус
+                        </th>
+                        <td class="product__info__table__row__data">
+                          Гречка
+                        </td>
+                      </tr>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Цена
+                        </th>
+                        <td class="product__info__table__row__data">
+                          700 ₽
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <button class="button button--primary button--buy-product">
+                Заказать
+              </button>
+            </li>
+            <li class="catalog__list__item product__card">
+              <div class="product__container">
+                <div class="product__image__container">
+                  <picture>
+                    <source media="(min-width: 1440px)"
+                        srcset="./img/catalog/product-7-desktop.png 1x,
+                                ./img/catalog/retina/product-7-desktop-x2.png 2x">
+                    <source media="(min-width: 768px)"
+                        srcset="./img/catalog/product-7-tablet.png 1x,
+                                ./img/catalog/retina/product-7-tablet-x2.png 2x">
+                    <img class="product__image" src="./img/catalog/product-7-mobile.png" alt="Товар"
+                        srcset="./img/catalog/product-7-mobile.png 1x,
+                                ./img/catalog/retina/product-7-mobile-x2.png 2x">
+                  </picture>
+                </div>
+                <div class="product__info">
+                  <h3 class="product__info__title">
+                    Cat Energy Slim 500 г
+                  </h3>
+                  <table class="product__info__table">
+                    <tbody>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Масса
+                        </th>
+                        <td class="product__info__table__row__data">
+                          500 г
+                        </td>
+                      </tr>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Вкус
+                        </th>
+                        <td class="product__info__table__row__data">
+                          Рис
+                        </td>
+                      </tr>
+                      <tr class="product__info__table__row">
+                        <th class="product__info__table__row__title">
+                          Цена
+                        </th>
+                        <td class="product__info__table__row__data">
+                          500 ₽
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <button class="button button--primary button--buy-product">
+                Заказать
+              </button>
+            </li>
+            <li class="catalog__list__item show__more__card">
+              <button class="button button--plus"></button>
+              <h3 class="title show__more__card__title">
+                Показать ещё 100500 товаров
+              </h3>
+              <p class="show__more__subtitle">
+                На самом деле вкусов гораздо больше!
+              </p>
+              <button class="button button--primary button--show-more">
+                Показать все
+              </button>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="additional">
+        <div class="wrapper additional__wrapper">
+          <div class="additional__header">
+          <h2 class="title additional__title">
+            Дополнительные товары
+          </h2>
+        </div>
+          <div class="additional__container">
+            <ul class="list additional__product__list">
+            <li class="additional__product__list__item additional__product__card">
+              <h3 class="title additional__product__title">
+                Сахарозаменитель
+              </h3>
+              <table class="additional__product__info__table">
+                <tr class="additional__product__table__row">
+                  <td class="additional__product__table__row__data">
+                    1 упаковка (100 г)
+                  </td>
+                  <td class="additional__product__table__row__data">
+                    200 ₽
+                  </td>
+                </tr>
+              </table>
+              <button class="button button--primary button--buy-product button--additional-buy-product">
+                Заказать
+              </button>
+            </li>
+            <li class="additional__product__list__item additional__product__card">
+              <h3 class="title additional__product__title">
+                Питьевая вода
+              </h3>
+              <table class="additional__product__info__table">
+                <tr class="additional__product__table__row">
+                  <td class="additional__product__table__row__data">
+                    5 литров
+                  </td>
+                  <td class="additional__product__table__row__data">
+                    50 ₽
+                  </td>
+                </tr>
+              </table>
+              <button class="button button--primary button--buy-product button--additional-buy-product">
+                Заказать
+              </button>
+            </li>
+            <li class="additional__product__list__item additional__product__card">
+              <h3 class="title additional__product__title">
+                Молоко
+              </h3>
+              <table class="additional__product__info__table">
+                <tr class="additional__product__table__row">
+                  <td class="additional__product__table__row__data">
+                    1 литр
+                  </td>
+                  <td class="additional__product__table__row__data">
+                    100 ₽
+                  </td>
+                </tr>
+              </table>
+              <button class="button button--primary button--buy-product button--additional-buy-product">
+                Заказать
+              </button>
+            </li>
+            <li class="additional__product__list__item additional__product__card">
+              <h3 class="title additional__product__title">
+                Витамины
+              </h3>
+              <table class="additional__product__info__table">
+                <tr class="additional__product__table__row">
+                  <td class="additional__product__table__row__data">
+                    1 упаковка (30 г)
+                  </td>
+                  <td class="additional__product__table__row__data">
+                    300 ₽
+                  </td>
+                </tr>
+              </table>
+              <button class="button button--primary button--buy-product button--additional-buy-product">
+                Заказать
+              </button>
+            </li>
+          </ul>
+          <div class="additional__gift additional__gift--background">
+            <div class="additional__gift__icon__container"></div>
+            <p class="additional__gift__text">
+              Закажите все и получите чехол для кота в подарок!
+            </p>
+          </div>
+          </div>
+
+        </div>
+      </section>
+
+      <section class="contacts">
+        <div class="wrapper contacts__wrapper">
+          <div class="contacts__agitation contacts__agitation--catalog-table">
+            <p class="contacts__text">
+              Приглашаем к сотрудничеству дилеров!
+            </p>
+            <p class="contacts__address">
+              ул. Большая Конюшенная, д. 19/8 Санкт-Петербург
+            </p>
+          </div>
+        </div>
+        <div class="contacts__location">
+          <iframe src="https://yandex.ru/map-widget/v1/?ll=40.569626%2C64.537849&z=14"  allowfullscreen="true"></iframe>
+        </div>
+      </section>
+    </main>
+
+    <footer class="main-footer">
+      <div class="wrapper main-footer__wrapper">
+        <ul class="list main-footer__list">
+          <li class="main-footer__list__item main-footer__list__item--logo">
+            <div class="main-footer__logo"></div>
+          </li>
+          <li class="main-footer__list__item">
+            <ul class="list social-list">
+              <li class="social-list__item">
+                <a class="link social-list__link">
+                  <img src="./img/social-networks/vkontakte.png" width="28" height="22" alt="">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="link social-list__link">
+                  <img src="./img/social-networks/youtube.png" width="28" height="22" alt="">
+                </a>
+              </li>
+              <li class="social-list__item">
+                <a class="link social-list__link">
+                  <img src="./img/social-networks/telegram.png" width="28" height="22" alt="">
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li class="main-footer__list__item main-footer__list__item--html-academy">
+            <div class="html-academy-links">
+              <a class="link html-academy-link" href="">HTML Academy</a>
+              <a class="link html-academy-logo" href="">
+                <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" width="37" height="44" viewBox="0 0 60 60">
+                  <path fill="#666666" d="M30.2 5h-.2l-19.7 2.1v36.2l19.7 11.7 19.7-11.7v-36.2l-19.5-2.1zm17 36.8l-17.2 10.2-17.2-10.2v-14.8l17.1 10.2v1.8l-11.7-7v1.8l11.8 7.1v1.9l-11.8-7v1.8l11.8 7 11.9-7.1v-7.6l5.3-3.2v15.1zm-.1-17l-4.7 2.8-2.2 1.3-10.3-6.1v1.8l8.8 5.3h-.1l-.2.1-1.3.7-7.3-4.3v1.8l5.8 3.4-1.4.9-4.3-2.6v1.8l2.9 1.7-2.9 1.7-17-10.1 17-10.2 17.2 10zm.1-1.8l-17.3-10.2-17.1 10.2v-13.6l17.2-1.8 17.2 1.8v13.6z"/>
+                </svg>
+              </a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </footer>
+</body>
+</html>
